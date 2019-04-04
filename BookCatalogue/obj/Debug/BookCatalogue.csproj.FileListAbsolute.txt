@@ -1,0 +1,16 @@
+D:\school\информатика\BookCatalogueProject\BookCatalogue\obj\Debug\BookCatalogue.csprojResolveAssemblyReference.cache
+D:\school\информатика\BookCatalogueProject\BookCatalogue\obj\Debug\BookCatalogue.Properties.Resources.resources
+D:\school\информатика\BookCatalogueProject\BookCatalogue\obj\Debug\BookCatalogue.csproj.GenerateResource.Cache
+D:\school\информатика\BookCatalogueProject\BookCatalogue\obj\Debug\BookCatalogue.csproj.CoreCompileInputs.cache
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\BookCatalogue.exe.config
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\BookCatalogue.exe
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\BookCatalogue.pdb
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\EntityFramework.dll
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\EntityFramework.SqlServer.dll
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\nunit.framework.dll
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\EntityFramework.xml
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\EntityFramework.SqlServer.xml
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\nunit.framework.pdb
+D:\school\информатика\BookCatalogueProject\BookCatalogue\bin\Debug\nunit.framework.xml
+D:\school\информатика\BookCatalogueProject\BookCatalogue\obj\Debug\BookCatalogue.exe
+D:\school\информатика\BookCatalogueProject\BookCatalogue\obj\Debug\BookCatalogue.pdb
