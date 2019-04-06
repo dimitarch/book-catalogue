@@ -1,5 +1,6 @@
 ﻿using BookCatalogue.Data;
 using BookCatalogue.Data.Models;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BookCatalogue.Logistics
 {
-    class BookLogistics
+    public class BookLogistics
     {
-        private BookContext bookContext;
+        public BookContext bookContext;
 
         public List<Book> GetAll()
         {
@@ -20,7 +21,47 @@ namespace BookCatalogue.Logistics
             }
         }
 
-        public Book Get(int id)
+        public List<Book> GetLoved()
+        {
+            using (bookContext = new BookContext())
+            {
+                return bookContext.Books.Where(b => b.Loved == true).ToList();
+            }
+        }
+
+        public List<Book> GetLiked()
+        {
+            using (bookContext = new BookContext())
+            {
+                return bookContext.Books.Where(b => b.Liked == true).ToList();
+            }
+        }
+
+        public List<Book> GetRead()
+        {
+            using (bookContext = new BookContext())
+            {
+                return bookContext.Books.Where(b => b.Read == true).ToList();
+            }
+        }
+
+        public List<Book> GetByName(string name)
+        {
+            using (bookContext = new BookContext())
+            {
+                return bookContext.Books.Where(b => b.Name == name).ToList();
+            }
+        }
+
+        public List<Book> GetByAuthor(string author)
+        {
+            using (bookContext = new BookContext())
+            {
+                return bookContext.Books.Where(b => b.Author == author).ToList();
+            }
+        }
+
+        public Book GetById(int id)
         {
             using (bookContext = new BookContext())
             {
@@ -63,24 +104,26 @@ namespace BookCatalogue.Logistics
             }
         }
 
-        public void MarkLoved()
+        public void MarkLoved(Book book)
         {
-
+            book.Loved = true;
+            book.Liked = false;
         }
 
-        public void MarkLiked()
+        public void MarkLiked(Book book)
         {
-
+            book.Liked = true;
+            book.Loved = false;
         }
 
-        public void MarkRead()
+        public void MarkRead(Book book)
         {
-
+            book.Read = true;
         }
-        
-        public void AddComment()
-        {
 
+        public void AddComment(Book book, string comment)
+        {
+            book.Comment = comment;
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookCatalogue.Data
 {
-    class BookContext : DbContext
+    public class BookContext : DbContext
     {
         public BookContext()
             : base("name=BookContext")
